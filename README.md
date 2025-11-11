@@ -5,6 +5,16 @@
 </p>
 
 ---
+ - 👨‍💻 All of my projects are available at [https://github.com/NLMDang22520190](https://github.com/NLMDang22520190)
+---
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=NLMDang22520190&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="160" alt="streak graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NLMDang22520190&locale=en&layout=compact&theme=dracula&hide_border=false" height="160" alt="languages graph"  />
+</div>
+
+---
+
 
 ### 👋 Hi, I'm Đăng!
 
@@ -34,14 +44,6 @@ Built dev/staging server, production-data dump script for debugging, and core bu
 ✅ **Health Buddy – Fullstack Project**  
 Auth0 login, workout planning, scoring-based suggestion system, Dockerized backend (Render) + React frontend (Netlify).
 
----
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=NLMDang22520190&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="160" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NLMDang22520190&locale=en&layout=compact&theme=dracula&hide_border=false" height="160" alt="languages graph"  />
-</div>
-
----
 
 ### 🌱 Currently Learning
 - ReactJS 19, ASP.NET Core Web API
