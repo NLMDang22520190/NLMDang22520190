@@ -52,7 +52,7 @@ Auth0 login, workout planning, scoring-based suggestion system, Dockerized backe
 📧 Email: **dangluu17122004@gmail.com**  
 💼 LinkedIn: https://linkedin.com/in/tekatoji  
 🧑‍💻 Projects: https://github.com/NLMDang22520190  
-📄 My CV: [View on Canva](https://www.canva.com/design/DAGL5zO4aSE/MwTGg5Uo2laIWwBNbooMcA/view)
+📄 My CV: [CV](https://drive.google.com/file/d/1OYYG5q1obB7S72_yaoTCjCDD7ltWMVv4/view?usp=share_link)
 
 ---
 
