@@ -5,8 +5,6 @@
 </p>
 
 ---
- - 👨‍💻 All of my projects are available at [https://github.com/NLMDang22520190](https://github.com/NLMDang22520190)
----
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=NLMDang22520190&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="160" alt="streak graph"  />
