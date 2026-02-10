@@ -1,4 +1,4 @@
-<h3 align="center">Fullstack .NET Developer | ReactJS Enthusiast | Passionate About Scalable, Real-World Products</h3>
+<h3 align="center">Backend Engineer | ERP & Financial Systems | Data Integrity Focused</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nlmdang22520190&label=Profile%20views&color=0e75b6&style=flat" alt="nlmdang22520190" />
@@ -14,54 +14,107 @@
 ---
 
 
-### 👋 Hi, I'm Đăng!
+## 👋 About Me
 
-I’m a Fullstack Web Developer with hands-on experience building **CRM** and **ERP** systems in production environments.  
-I focus on clean architecture, maintainable code, and delivering real business results — not just school projects.
+I'm a backend engineer working on production ERP and CRM systems handling accounting and inventory workflows.
 
-🔹 **Backend:** ASP.NET Core, Django  
-🔹 **Frontend:** ReactJS, Redux, Tailwind  
-🔹 **Databases:** SQL Server, PostgreSQL  
-🔹 **DevOps:** Docker, CI-based preview environments  
-🔹 **AI-assisted development:** Cursor, Codex, Copilot
+My focus is building systems where correctness matters:
+- Financial consistency
+- Transaction safety
+- Reproducible historical recalculation
+- Clean and maintainable architecture
+
+Currently working with ~50 internal users and ~100,000 ERP transactions.
 
 ---
 
-### 🚀 What I’ve Worked On
+## 🏗 ERP System – Backend Co-Lead
 
-✅ **Internal CRM Platform – Project Leader & Fullstack Developer**  
-Designed system architecture, implemented online payments, order tracking, notifications, and built CI-based preview environments.  
-🧩 Improved internal operations (Sales, Accounting, Logistics) resulting in **+47.8% revenue** and **+46.7% orders**.
+Enterprise resource planning system designed for real-world accounting operations.
 
-✅ **Internal ERP System – Backend Co-Lead**  
-Built dev/staging server, production-data dump script for debugging, and core business logic:  
-• Product costing (weighted average)  
-• Stock movement flows (purchase, sales, returns, adjustments)  
-• Recalculation of historical accounting & inventory transactions
+### Responsibilities
 
-✅ **Health Buddy – Fullstack Project**  
-Auth0 login, workout planning, scoring-based suggestion system, Dockerized backend (Render) + React frontend (Netlify).
+- Designed and implemented weighted-average product costing
+- Built stock movement workflows (purchase, sales, returns, adjustments)
+- Implemented historical full-rebuild recalculation logic
+- Ensured transaction safety using Django atomic transactions
+- Built staging environment isolated from production
+- Developed production data dump & sanitization tooling
+- Integrated Sentry for production error monitoring
 
+### Engineering Priorities
 
-### 🌱 Currently Learning
-- ReactJS 19, ASP.NET Core Web API
-- Auth0 & OAuth2 flows
+- Financial correctness over feature speed
+- Clear service-layer architecture
+- Reproducible debugging using real datasets
+
 ---
+
+## 📊 CRM System – Technical Owner
+
+- Designed backend architecture & API contracts
+- Integrated SePay payment gateway
+- Implemented webhook-based payment confirmation
+- Built CI-based preview environments
+- Collaborated directly with business stakeholders
+
+Business impact:
++47.8% revenue  
++46.7% order growth  
+
+---
+
+## 🧩 Technical Stack
+
+Backend:
+- Django
+- ASP.NET Core
+- RESTful APIs
+- Clean Architecture
+
+Database:
+- PostgreSQL
+- SQL Server
+- Transaction handling & reconciliation logic
+
+DevOps:
+- Docker
+- Git
+- Render
+- Netlify
+- Sentry
+
+Frontend (supporting role):
+- ReactJS
+- Redux
+- Tailwind
+
+---
+
+## 🌱 Currently Improving
+
+- Concurrency control strategies
+- Idempotent API design for financial workflows
+- Automated testing for business-critical logic
+- Performance optimization for large dataset recalculation
+
+---
+
+## 📬 Contact
+
+Email: dangluu17122004@gmail.com  
+LinkedIn: linkedin.com/in/tekatoji  
+GitHub: github.com/NLMDang22520190  
+
+---
+
 
 ### 📬 Contact Me
 📧 Email: **dangluu17122004@gmail.com**  
 💼 LinkedIn: https://linkedin.com/in/tekatoji  
 🧑‍💻 Projects: https://github.com/NLMDang22520190  
-📄 My CV: [CV-NguyenLuuMinhDang](https://drive.google.com/file/d/1OYYG5q1obB7S72_yaoTCjCDD7ltWMVv4/view?usp=share_link)
 
 ---
-
-### ⚡ Fun Fact
-I’ve turned bugs into features more times than I’d like to admit — but hey, innovation is unpredictable 😄
-
----
-
-⭐ If you like my work, feel free to star my repositories or connect with me!
 
 
 <h3 align="left">Languages and Tools:</h3>
