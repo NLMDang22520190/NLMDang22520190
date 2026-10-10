@@ -1,120 +1,134 @@
-<h3 align="center">Backend Engineer | ERP & Financial Systems | Data Integrity Focused</h3>
+<div align="center">
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nlmdang22520190&label=Profile%20views&color=0e75b6&style=flat" alt="nlmdang22520190" />
+# Hi, I'm Dang (Nguyen Luu Minh Dang) 👋
+
+<a href="https://github.com/NLMDang22520190">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=0E75B6&center=true&vCenter=true&width=640&lines=Backend-focused+Software+Engineer;ERP+%C2%B7+Accounting+%C2%B7+Inventory+%C2%B7+Finance;Django+%C2%B7+PostgreSQL+%C2%B7+AWS;Correctness+first%2C+then+speed" alt="Typing SVG" />
+</a>
+
+<p>
+  <a href="https://linkedin.com/in/tekatoji"><img src="https://img.shields.io/badge/LinkedIn-tekatoji-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:dangluu17122004@gmail.com"><img src="https://img.shields.io/badge/Email-dangluu17122004-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <img src="https://img.shields.io/badge/TOEIC-965-2EA44F?style=for-the-badge" alt="TOEIC 965" />
+  <img src="https://komarev.com/ghpvc/?username=nlmdang22520190&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile views" />
 </p>
 
----
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=NLMDang22520190&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="160" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NLMDang22520190&locale=en&layout=compact&theme=dracula&hide_border=false" height="160" alt="languages graph"  />
 </div>
 
 ---
 
+## 🧑‍💻 About Me
 
-## 👋 About Me
+I'm a **backend-focused Software Engineer** at **TTMI JSC**, shipping production ERP and full-stack operations features used across **50 stores, 500 employees and 4 brands**.
 
-I'm a backend engineer working on production ERP and CRM systems handling accounting and inventory workflows.
+I work where correctness matters most: accounting ledgers, inventory costing, and money. I care about transaction safety, idempotent background jobs, and reports that stay fast on large datasets.
 
-My focus is building systems where correctness matters:
-- Financial consistency
-- Transaction safety
-- Reproducible historical recalculation
-- Clean and maintainable architecture
-
-Currently working with ~50 internal users and ~100,000 ERP transactions.
+- 🏢 **Now:** Software Developer (Backend-focused) @ TTMI JSC, since Feb 2025
+- 🎓 **Studying:** Master's in Information Systems @ UIT, VNU-HCMC (from Aug 2026)
+- 🏅 **Graduated:** B.Eng. Software Engineering @ UIT, with Honors (2022 – 2026)
+- 🤖 **Workflow:** Codex-assisted development, with reusable prompts and skills I built to validate AI-generated work
 
 ---
 
-## 🏗 ERP System – Backend Co-Lead
+## 📈 Impact Highlights
 
-Enterprise resource planning system designed for real-world accounting operations.
-
-### Responsibilities
-
-- Designed and implemented weighted-average product costing
-- Built stock movement workflows (purchase, sales, returns, adjustments)
-- Implemented historical full-rebuild recalculation logic
-- Ensured transaction safety using Django atomic transactions
-- Built staging environment isolated from production
-- Developed production data dump & sanitization tooling
-- Integrated Sentry for production error monitoring
-
-### Engineering Priorities
-
-- Financial correctness over feature speed
-- Clear service-layer architecture
-- Reproducible debugging using real datasets
+| | Result |
+|---|---|
+| ⚡ **Bulk invoice import** | **3 h → 15 min** for ~7,000 invoice headers (50–100 lines each), by replacing ORM-heavy ingestion with PostgreSQL `COPY`, staged inserts and batched detail processing |
+| 🧾 **CRM payment flow** | **~60% faster** order processing with async payment webhooks and automated order state transitions |
+| 🔍 **QC batch APIs** | **~55% fewer** SQL queries and **~60% lower** runtime (319-row benchmark), shipped to production |
+| 🏬 **ERP scale** | **20 modules** (accounting, inventory, purchasing, sales, CRM, HRM, finance) serving 50 stores and 500 employees |
 
 ---
 
-## 📊 CRM System – Technical Owner
+## 💼 Experience
 
-- Designed backend architecture & API contracts
-- Integrated SePay payment gateway
-- Implemented webhook-based payment confirmation
-- Built CI-based preview environments
-- Collaborated directly with business stakeholders
+<details open>
+<summary><b>TTMI JSC</b>, Software Developer (Backend-focused) · <i>Ho Chi Minh City · Feb 2025 – Present</i></summary>
+<br />
 
-Business impact:
-+47.8% revenue  
-+46.7% order growth  
+- **Weighted-average inventory costing engine**: worked with accountants to turn business rules into per-warehouse price calculations, kept in sync across stock documents, inventory movements and accounting entries.
+- **Transaction-safe workflows**: atomic transactions and row-level locking keep stock movements and financial ledgers consistent.
+- **Resilient async jobs**: AWS SQS + ECS workers with idempotency keys, retries, worker leases and heartbeats, so jobs are never processed twice and failed jobs recover.
+- **Fast financial reporting**: ledger, stock, receivables and sales APIs tuned with raw SQL, server-side pagination, selective projections and indexes.
+- **Full-stack finance features**: React/TypeScript + Django, with BigInt money aggregation, revision-based optimistic concurrency and scoped permissions.
+- **Security & concurrency**: application-scoped token auth with atomic rotation, plus hybrid row locking with version checks for multi-user QC updates.
+- **Platform & quality**: diff-based line and branch coverage gate in CI, migration from AWS App Runner to ECS, AWS Batch/S3 exports for reproducing production issues locally, Sentry + CloudWatch Logs for monitoring.
+- **CRM platform lead**: led backend development of the internal CRM for orders, customers, payment confirmation and reporting.
 
----
+</details>
 
-## 🧩 Technical Stack
+<details>
+<summary><b>CLOUDJET CORPORATE</b>, Backend Engineer · <i>Ho Chi Minh City · Jan 2024 – Jan 2025</i></summary>
+<br />
 
-Backend:
-- Django
-- ASP.NET Core
-- RESTful APIs
-- Clean Architecture
+- Built the **Django REST backend** for an HRM and KPI evaluation platform: employee profiles, departments, KPI cycles, goals, reviews and approvals.
+- Designed normalized PostgreSQL schemas with approval history and audit logs, and **role-based access control** for admins, HR, managers and employees.
+- Implemented weighted KPI scoring, department summaries and notification workflows.
+- Built **async Excel/PDF report generation** on AWS SQS + ECS, and optimized dashboard APIs.
 
-Database:
-- PostgreSQL
-- SQL Server
-- Transaction handling & reconciliation logic
-
-DevOps:
-- Docker
-- Git
-- Render
-- Netlify
-- Sentry
-
-Frontend (supporting role):
-- ReactJS
-- Redux
-- Tailwind
+</details>
 
 ---
 
-## 🌱 Currently Improving
+## 🏗️ How I Build Reliable Background Jobs
 
-- Concurrency control strategies
-- Idempotent API design for financial workflows
-- Automated testing for business-critical logic
-- Performance optimization for large dataset recalculation
+A simplified view of the pattern I use for long-running ERP jobs (imports, recalculation, exports):
+
+```mermaid
+flowchart LR
+    C[Client / Admin UI] -->|POST job + idempotency key| API[Django REST API]
+    API -->|insert job row| DB[(PostgreSQL)]
+    API -->|enqueue| Q[[AWS SQS]]
+    Q --> W[ECS Worker]
+    W -->|claim lease + heartbeat| DB
+    W -->|COPY / batched writes<br/>inside atomic tx + row locks| DB
+    W -->|on failure: retry or release lease| Q
+    W -.->|errors & logs| M[Sentry + CloudWatch]
+    W -->|large exports| S3[(S3 + presigned URL)]
+```
+
+- **Idempotency key** → a retried request never creates a second job.
+- **Lease + heartbeat** → a crashed worker's job is picked up again, never processed twice.
+- **Atomic transactions + row-level locks** → stock and ledger stay consistent, even under concurrent edits.
 
 ---
 
-## 📬 Contact
+## 🛠️ Tech Stack
 
-Email: dangluu17122004@gmail.com  
-LinkedIn: linkedin.com/in/tekatoji  
-GitHub: github.com/NLMDang22520190  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,django,postgres,ts,js,react,cs,dotnet&perline=8" alt="Languages and frameworks" />
+  <br />
+  <img src="https://skillicons.dev/icons?i=aws,docker,githubactions,git,cloudflare,vitest,postman,vscode&perline=8" alt="Cloud and tooling" />
+</p>
+
+| Area | Tools |
+|---|---|
+| **Backend & APIs** | Django, Django REST Framework, ASP.NET Core, RESTful APIs, webhooks, OpenAPI |
+| **Data** | PostgreSQL, SQL Server, `COPY`, raw SQL, indexing, query optimization, transactions, row-level locking |
+| **Cloud & DevOps** | AWS SQS, ECS, Batch, S3, CloudWatch Logs, Docker, GitHub Actions, Sentry, CI/CD |
+| **Frontend** | React, TypeScript, Vitest, Playwright, Cloudflare |
+| **Practices** | Pytest, unit and API testing, coverage gates, Codex-assisted development, AI output validation |
+| **Domains** | ERP, accounting, inventory, financial reporting, HRM/KPI, CRM, QC, concurrency control, idempotent background processing |
 
 ---
 
+## 📌 Open Source
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
-###
+- 🧰 [**agent-playbook**](https://github.com/NLMDang22520190/agent-playbook): reusable skills for AI coding agents (Claude Code, Codex, OpenCode). It covers clarifying by reversibility, proof for every claim, 3-role TDD with git gates, and project learnings.
 
-<br clear="both">
+---
 
-<img src="https://raw.githubusercontent.com/NLMDang22520190/NLMDang22520190/output/snake.svg" alt="Snake animation" />
+## 📊 GitHub Stats
 
-###
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NLMDang22520190&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&hide_border=false" height="165" alt="GitHub stats" />
+  <img src="https://streak-stats.demolab.com?user=NLMDang22520190&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="160" alt="Streak stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NLMDang22520190&locale=en&layout=compact&theme=dracula&hide_border=false" height="160" alt="Top languages" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/NLMDang22520190/NLMDang22520190/output/snake.svg" alt="Snake animation" />
+</div>
