@@ -73,24 +73,11 @@ I work where correctness matters most: accounting ledgers, inventory costing, an
 
 ## 🏗️ How I Build Reliable Background Jobs
 
-A simplified view of the pattern I use for long-running ERP jobs (imports, recalculation, exports):
+A simplified view of the pattern I use for long-running ERP jobs:
 
-```mermaid
-flowchart LR
-    C[Client / Admin UI] -->|POST job + idempotency key| API[Django REST API]
-    API -->|insert job row| DB[(PostgreSQL)]
-    API -->|enqueue| Q[[AWS SQS]]
-    Q --> W[ECS Worker]
-    W -->|claim lease + heartbeat| DB
-    W -->|COPY / batched writes<br/>inside atomic tx + row locks| DB
-    W -->|on failure: retry or release lease| Q
-    W -.->|errors & logs| M[Sentry + CloudWatch]
-    W -->|large exports| S3[(S3 + presigned URL)]
-```
-
-- **Idempotency key** → a retried request never creates a second job.
-- **Lease + heartbeat** → a crashed worker's job is picked up again, never processed twice.
-- **Atomic transactions + row-level locks** → stock and ledger stay consistent, even under concurrent edits.
+<p align="center">
+  <img src="./assets/background-jobs.svg" width="100%" alt="Reliable background jobs: Django REST API, AWS SQS, ECS workers with idempotency keys, leases and heartbeats, atomic transactions with row-level locks in PostgreSQL" />
+</p>
 
 ---
 
